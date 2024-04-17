@@ -1,0 +1,18 @@
+.button {
+   width: 150px;
+   height: 150px;
+   background-position: center;
+   background-size: cover;
+   outline: none;
+   position: relative;
+   z-index: 2;
+}
+.buttonReady {
+   background-image: url('./buttonIcon3.png');
+}
+.buttonProcess{
+   background-image: url('./buttonIcon2.png');
+}
+.buttonActive {
+   background-image: url('./buttonIcon.png');
+}

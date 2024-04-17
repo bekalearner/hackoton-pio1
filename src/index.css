@@ -1,0 +1,110 @@
+/* === TAILWIND === */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === COMMON === */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+
+  overflow: hidden;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* === SEND-VOICE-ANIMATE === */
+
+.pulse::after,
+.pulse::before {
+  content: '';
+  position: absolute;
+  border: 2px solid #fff;
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  opacity: 0;
+  animation: pulse 3s linear infinite;
+}
+
+.pulse::after {
+  animation-delay: 1.5s;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.4);
+  }
+}
+
+.pallete3 {
+  background-image: radial-gradient(circle at bottom left, #0000FF00, rgba(11, 164, 91, 0.79), rgb(1, 147, 101), #9cf5ca);
+}
+.pallete4 {
+  background-image: radial-gradient(circle at bottom left, #0000FF00, rgba(37, 204, 120, 0.79), rgb(0, 150, 105), #094b2b);
+}
+
+.gradient {
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+  width: 40%;
+  height: 40%;
+  border-radius: 35%;
+  filter: blur(150px);
+  z-index: 1;
+  transition: all .2s ease-in;
+}
+
+.gradient-2 {
+  position: absolute;
+  right: -50px;
+  top: -50px;
+  width: 25%;
+  height: 25%;
+  border-radius: 35%;
+  filter: blur(150px);
+  z-index: 1;
+  transition: all .2s ease-in;
+}
+.pallete5 {
+  background-image: radial-gradient(circle at bottom left, #0000FF00, #6e0fec, rgba(0, 81, 255, 0.87), #8169e0);
+}
+.pallete6{
+  background-image: radial-gradient(circle at bottom left, #0000FF00, #00bbff, #0000FFDD, #8c00ff);
+}
+.pallete1 {
+  background-image: radial-gradient(circle at bottom left, #0000FF00, #d74f3a, rgba(255, 204, 0, 0.87), #fca6ae);
+}
+
+.pallete2 {
+  background-image: radial-gradient(circle at bottom left, #0000FF00, #ffd354, rgba(255, 0, 30, 0.87), #ce6900);
+}
+
+
+
+

@@ -1,0 +1,157 @@
+.siri-waveform {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0,55,42);
+    background: linear-gradient(156deg, rgba(0,55,42,1) 0%, rgba(6,191,147,0.8477591720281863) 49%, rgba(255,255,255,0) 100%);
+    position: absolute;
+    z-index: 10;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: #ffffff;
+    left: 33%;
+    top: 33%;
+}
+
+.circleTransform {
+    animation-name: myAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.circleAnimation {
+    animation-name: waving1;
+    animation-duration: .2s;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.circleAnimation2 {
+    animation-name: waving2;
+    animation-duration: .2s;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.siri {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+@keyframes waving1 {
+    0% {
+        background: rgb(76,73,250);
+        background: linear-gradient(144deg, rgba(76,73,250,0.8729692560617998) 0%, rgba(128,34,255,0.5452381636248249) 75%, rgba(255,255,255,0) 100%);
+    }
+    10% {
+        background: rgb(76,73,250);
+        background: linear-gradient(180deg, rgba(76,73,250,0.8729692560617998) 0%, rgba(128,34,255,0.5452381636248249) 75%, rgba(255,255,255,0) 100%);
+    }
+    20% {
+        background: rgb(76,73,250);
+        background: linear-gradient(216deg, rgba(76,73,250,0.8729692560617998) 0%, rgba(128,34,255,0.5452381636248249) 75%, rgba(255,255,255,0) 100%);
+    }
+    30% {
+        background: rgb(76,73,250);
+        background: linear-gradient(252deg, rgba(76,73,250,0.8729692560617998) 0%, rgba(128,34,255,0.5452381636248249) 75%, rgba(255,255,255,0) 100%);
+    }
+    40% {
+        background: rgb(76,73,250);
+        background: linear-gradient(288deg, rgba(76,73,250,0.8729692560617998) 0%, rgba(128,34,255,0.5452381636248249) 75%, rgba(255,255,255,0) 100%);
+    }
+    50% {
+        background: rgb(76,73,250);
+        background: linear-gradient(288deg, rgba(76,73,250,0.8729692560617998) 0%, rgba(128,34,255,0.5452381636248249) 75%, rgba(255,255,255,0) 100%);
+    }
+    60% {
+        background: rgb(76,73,250);
+        background: linear-gradient(324deg, rgba(76,73,250,0.8729692560617998) 0%, rgba(128,34,255,0.5452381636248249) 75%, rgba(255,255,255,0) 100%);
+    }
+    70% {
+        background: rgb(76,73,250);
+        background: linear-gradient(0deg, rgba(76,73,250,0.8729692560617998) 0%, rgba(128,34,255,0.5452381636248249) 75%, rgba(255,255,255,0) 100%);
+    }
+    80% {
+        background: rgb(76,73,250);
+        background: linear-gradient(36deg, rgba(76,73,250,0.8729692560617998) 0%, rgba(128,34,255,0.5452381636248249) 75%, rgba(255,255,255,0) 100%);
+    }
+    90% {
+        background: rgb(76,73,250);
+        background: linear-gradient(110deg, rgba(76,73,250,0.8729692560617998) 0%, rgba(128,34,255,0.5452381636248249) 75%, rgba(255,255,255,0) 100%);
+    }
+    100% {
+        background: rgb(76,73,250);
+        background: linear-gradient(144deg, rgba(76,73,250,0.8729692560617998) 0%, rgba(128,34,255,0.5452381636248249) 75%, rgba(255,255,255,0) 100%);
+    }
+}
+
+@keyframes waving2 {
+    0% {
+        background: rgb(250,73,128);
+        background: linear-gradient(144deg, rgba(250,73,128,0.8729692560617998) 0%, rgba(255,173,34,0.5452381636248249) 75%, rgba(255,255,255,0) 100%);
+    }
+    10% {
+        background: rgb(250,73,128);
+        background: linear-gradient(180deg, rgba(250,73,128,0.8729692560617998) 0%, rgba(255,173,34,0.5452381636248249) 75%, rgba(255,255,255,0) 100%);
+    }
+    20% {
+        background: rgb(250,73,128);
+        background: linear-gradient(219deg, rgba(250,73,128,0.8729692560617998) 0%, rgba(255,173,34,0.5452381636248249) 75%, rgba(255,255,255,0) 100%);
+    }
+    30% {
+        background: rgb(250,73,128);
+        background: linear-gradient(250deg, rgba(250,73,128,0.8729692560617998) 0%, rgba(255,173,34,0.5452381636248249) 75%, rgba(255,255,255,0) 100%);
+    }
+    40% {
+        background: rgb(250,73,128);
+        background: linear-gradient(286deg, rgba(250,73,128,0.8729692560617998) 0%, rgba(255,173,34,0.5452381636248249) 75%, rgba(255,255,255,0) 100%);
+    }
+    50% {
+        background: rgb(250,73,128);
+        background: linear-gradient(325deg, rgba(250,73,128,0.8729692560617998) 0%, rgba(255,173,34,0.5452381636248249) 75%, rgba(255,255,255,0) 100%);
+    }
+    60% {
+        background: rgb(250,73,128);
+        background: linear-gradient(0deg, rgba(250,73,128,0.8729692560617998) 0%, rgba(255,173,34,0.5452381636248249) 75%, rgba(255,255,255,0) 100%);
+    }
+    70% {
+        background: rgb(250,73,128);
+        background: linear-gradient(34deg, rgba(250,73,128,0.8729692560617998) 0%, rgba(255,173,34,0.5452381636248249) 75%, rgba(255,255,255,0) 100%);
+    }
+    80% {
+        background: rgb(250,73,128);
+        background: linear-gradient(72deg, rgba(250,73,128,0.8729692560617998) 0%, rgba(255,173,34,0.5452381636248249) 75%, rgba(255,255,255,0) 100%);
+    }
+    90% {
+        background: rgb(250,73,128);
+        background: linear-gradient(111deg, rgba(250,73,128,0.8729692560617998) 0%, rgba(255,173,34,0.5452381636248249) 75%, rgba(255,255,255,0) 100%);
+    }
+    100% {
+        background: rgb(250,73,128);
+        background: linear-gradient(144deg, rgba(250,73,128,0.8729692560617998) 0%, rgba(255,173,34,0.5452381636248249) 75%, rgba(255,255,255,0) 100%);
+    }
+}
+
+@keyframes myAnimation {
+    0%{
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
